@@ -5,13 +5,16 @@
   "keywords": [],
   "author": "rupert-ong <rupert.ong@gmail.com>",
   "license": "ISC",
-  "main": "lib/base.js",
+  "main": "dist/base.cjs.js",
+  "module": "dist/base.esm.js",
+  "src": "lib/base.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"

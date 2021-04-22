@@ -6,9 +6,9 @@ const babel = require("@rollup/plugin-babel").default;
 const postcss = require("rollup-plugin-postcss");
 
 const currentWorkingPath = process.cwd();
-const { main, name } = require(path.join(currentWorkingPath, "package.json"));
+const { src, name } = require(path.join(currentWorkingPath, "package.json"));
 
-const inputPath = path.join(currentWorkingPath, main);
+const inputPath = path.join(currentWorkingPath, src);
 
 const fileName = name.replace("@rupertong/", "");
 

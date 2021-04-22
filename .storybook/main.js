@@ -25,6 +25,9 @@ module.exports = {
       ],
     });
 
+    // Set priority order for stor(ies) source files
+    config.resolve.mainFields = ["src", "module", "main"];
+
     // Return the altered config
     return config;
   },
