@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy": "npm run build-storybook && gh-pages -d storybook-static"
+    "deploy": "npm run build-storybook && gh-pages -d storybook-static",
+    "publish": "lerna publish"
   },
   "keywords": [],
   "author": "",
