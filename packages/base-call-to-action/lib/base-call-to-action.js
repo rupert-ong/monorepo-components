@@ -1,5 +1,6 @@
 import { Button } from "@rupertong/base-button";
 import { Text } from "@rupertong/base-text";
+import React from "react";
 import styles from "./styles.css";
 
 const CallToAction = ({ text, buttonText, ...rest }) => {
