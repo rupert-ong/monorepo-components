@@ -1,0 +1,42 @@
+{
+  "name": "@rupertong/base-call-to-action",
+  "version": "0.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "rupert-ong <rupert.ong@gmail.com>",
+  "license": "ISC",
+  "main": "dist/base-call-to-action.cjs.js",
+  "module": "dist/base-call-to-action.esm.js",
+  "src": "lib/base-call-to-action.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "base-builder",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/rupert-ong/monorepo-components/issues"
+  },
+  "homepage": "https://github.com/rupert-ong/monorepo-components#readme",
+  "dependencies": {
+    "@rupertong/base-button": "^1.0.0",
+    "@rupertong/base-text": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rupertong/base-builder": "^1.0.0",
+    "react": "16.x"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  }
+}

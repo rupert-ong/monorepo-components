@@ -1,0 +1,9 @@
+.Root {
+  display: flex;
+  align-items: center;
+  margin: 0 -4px;
+}
+
+.Root > * {
+  margin: 0 4px;
+}
