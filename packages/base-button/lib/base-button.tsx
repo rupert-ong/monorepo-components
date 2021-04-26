@@ -2,7 +2,18 @@ import clsx from "clsx";
 import React from "react";
 import styles from "./styles.css";
 
-const Button = ({ children, className, variant, ...rest }) => {
+export interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+  variant?: "primary" | "secondary";
+}
+
+const Button = ({
+  children,
+  className = "",
+  variant = "primary",
+  ...rest
+}: ButtonProps) => {
   const classes = clsx(
     styles.Button,
     {

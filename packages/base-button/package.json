@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "dist/base-button.cjs.js",
   "module": "dist/base-button.esm.js",
-  "src": "lib/base-button.js",
+  "src": "lib/base-button.tsx",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
