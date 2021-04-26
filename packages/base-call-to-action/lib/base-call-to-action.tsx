@@ -3,7 +3,12 @@ import { Text } from "@rupertong/base-text";
 import React from "react";
 import styles from "./styles.css";
 
-const CallToAction = ({ text, buttonText, ...rest }) => {
+export interface CallToActionProps {
+  text: string;
+  buttonText: string;
+}
+
+const CallToAction = ({ text, buttonText, ...rest }: CallToActionProps) => {
   return (
     <div className={styles.Root}>
       <Text>{text}</Text> <Button {...rest}>{buttonText}</Button>
