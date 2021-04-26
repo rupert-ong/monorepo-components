@@ -3,6 +3,11 @@
   "version": "independent",
   "hoist": true,
   "stream": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md"]
+    }
+  },
   "bootstrap": {
     "npmClientArgs": ["--no-package-lock"]
   }
