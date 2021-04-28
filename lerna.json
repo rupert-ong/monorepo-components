@@ -5,7 +5,9 @@
   "stream": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"]
+      "ignoreChanges": ["*.md"],
+      "registry": "https://registry.npmjs.org",
+      "message": "chore(release): publish"
     }
   },
   "bootstrap": {

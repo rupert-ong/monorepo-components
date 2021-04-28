@@ -8,6 +8,7 @@
   "main": "dist/base-button.cjs.js",
   "module": "dist/base-button.esm.js",
   "src": "lib/base-button.tsx",
+  "types": "dist/types/base-button/lib/base-button.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,8 +18,7 @@
     "dist"
   ],
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   },
   "scripts": {
     "build": "base-builder",

@@ -9,6 +9,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
+    "bootstrap": "lerna bootstrap --hoist",
     "publish": "lerna publish"
   },
   "keywords": [],
