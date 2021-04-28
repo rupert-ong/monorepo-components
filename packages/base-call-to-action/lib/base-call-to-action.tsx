@@ -1,11 +1,13 @@
 import { Button } from "@rupertong/base-button";
 import { Text } from "@rupertong/base-text";
-import React from "react";
+import React, { ReactNode } from "react";
 import styles from "./styles.css";
 
 export interface CallToActionProps {
-  text: string;
-  buttonText: string;
+  /** Label for Text component  */
+  text: ReactNode;
+  /** Label for Button component  */
+  buttonText: ReactNode;
 }
 
 const CallToAction = ({ text, buttonText, ...rest }: CallToActionProps) => {

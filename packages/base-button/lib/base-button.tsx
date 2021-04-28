@@ -3,8 +3,11 @@ import React from "react";
 import styles from "./styles.css";
 
 export interface ButtonProps {
+  /** Button label */
   children: React.ReactNode;
+  /** Optional className to add to button */
   className?: string;
+  /** Variant for type of button style to use */
   variant?: "primary" | "secondary";
 }
 
