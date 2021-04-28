@@ -30,7 +30,6 @@ const inputOptions = {
       extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".node"],
     }),
     commonjs(),
-    // del({ targets: [`${path.join(currentWorkingPath, "dist")}`] }),
     typescript({
       tsconfig: "../../tsconfig.json",
       useTsconfigDeclarationDir: true,
