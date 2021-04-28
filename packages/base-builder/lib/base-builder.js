@@ -7,7 +7,7 @@ const resolve = require("@rollup/plugin-node-resolve").default;
 const babel = require("@rollup/plugin-babel").default;
 const postcss = require("rollup-plugin-postcss");
 const typescript = require("rollup-plugin-typescript2");
-const del = require("rollup-plugin-delete");
+const fs = require("fs-extra");
 
 const currentWorkingPath = process.cwd();
 const {
@@ -30,11 +30,11 @@ const inputOptions = {
       extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".node"],
     }),
     commonjs(),
+    // del({ targets: [`${path.join(currentWorkingPath, "dist")}`] }),
     typescript({
       tsconfig: "../../tsconfig.json",
-      rollupCommonJSResolveHack: true,
       useTsconfigDeclarationDir: true,
-      // clean: true,
+      clean: true,
       tsconfigOverride: {
         compilerOptions: {
           baseUrl: currentWorkingPath,
@@ -71,7 +71,6 @@ const inputOptions = {
     postcss({
       modules: true,
     }),
-    del({ targets: [`${path.join(currentWorkingPath, "dist")}`] }),
   ],
 };
 
@@ -89,6 +88,7 @@ const outputOptions = [
 ];
 
 async function build() {
+  await fs.remove(path.join(currentWorkingPath, "dist"));
   const bundle = await rollup.rollup(inputOptions);
   outputOptions.forEach(async (options) => {
     await bundle.write(options);
