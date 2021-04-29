@@ -1,6 +1,6 @@
 {
   "name": "@rupertong/base-call-to-action",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "rupert-ong <rupert.ong@gmail.com>",
@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/rupert-ong/monorepo-components#readme",
   "dependencies": {
-    "@rupertong/base-button": "^1.1.0",
-    "@rupertong/base-text": "^1.0.0"
+    "@rupertong/base-button": "^1.1.1",
+    "@rupertong/base-text": "^1.0.1"
   },
   "devDependencies": {
-    "@rupertong/base-builder": "^1.0.0",
+    "@rupertong/base-builder": "^1.0.1",
     "react": "16.x"
   },
   "peerDependencies": {

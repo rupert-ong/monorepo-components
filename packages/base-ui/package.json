@@ -1,6 +1,6 @@
 {
   "name": "@rupertong/base-ui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "rupert-ong <rupert.ong@gmail.com>",
   "homepage": "https://github.com/rupert-ong/monorepo-components#readme",
@@ -35,7 +35,7 @@
     "url": "https://github.com/rupert-ong/monorepo-components/issues"
   },
   "devDependencies": {
-    "@rupertong/base-builder": "^1.0.0",
+    "@rupertong/base-builder": "^1.0.1",
     "react": "16.x"
   },
   "peerDependencies": {
