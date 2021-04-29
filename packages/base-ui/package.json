@@ -9,7 +9,7 @@
     "*.css"
   ],
   "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/esm/index.js",
   "src": "lib/",
   "types": "dist/types/index.d.ts",
   "directories": {
