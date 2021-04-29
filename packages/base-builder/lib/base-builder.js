@@ -8,6 +8,7 @@ const babel = require("@rollup/plugin-babel").default;
 const postcss = require("rollup-plugin-postcss");
 const typescript = require("rollup-plugin-typescript2");
 const fs = require("fs-extra");
+const rename = require("rollup-plugin-rename-node-modules");
 
 const currentWorkingPath = process.cwd();
 const {
@@ -25,8 +26,13 @@ const fileName = name.replace("@rupertong/", "");
 
 const inputOptions = {
   input: inputPath,
-  external: [...Object.keys(devDependencies), ...Object.keys(peerDependencies)],
+  external: [
+    ...Object.keys(devDependencies),
+    ...Object.keys(peerDependencies),
+    "tslib",
+  ],
   plugins: [
+    rename(),
     peerDepsExternal(),
     resolve({
       extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".node"],
@@ -58,6 +64,9 @@ const inputOptions = {
       presets: [
         [
           "@babel/preset-env",
+          {
+            modules: false,
+          },
           /* {
             corejs: 3,
             modules: false,
@@ -67,7 +76,8 @@ const inputOptions = {
         ],
         "@babel/preset-react",
       ],
-      babelHelpers: "bundled",
+      plugins: ["@babel/plugin-transform-runtime"],
+      babelHelpers: "runtime",
     }),
     postcss({
       modules: true,
@@ -83,10 +93,17 @@ const outputOptions = [
     sourcemap: true,
     exports: "auto",
   },
-  {
+  /*   {
     // file: `dist/${fileName}.esm.js`,
     file: moduleName,
     format: "esm",
+    sourcemap: true,
+  }, */
+  {
+    dir: "dist/esm",
+    format: "esm",
+    preserveModules: true,
+    preserveModulesRoot: "./lib",
     sourcemap: true,
   },
 ];
