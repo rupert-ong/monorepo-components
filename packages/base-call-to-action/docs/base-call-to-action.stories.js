@@ -1,5 +1,5 @@
 import React from "react";
-import { CallToAction } from "../lib/base-call-to-action";
+import CallToAction from "../lib";
 
 export default { title: "CallToAction" };
 

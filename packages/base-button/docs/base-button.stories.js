@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../lib/base-button";
+import Button from "../lib";
 
 export default { title: "Button" };
 

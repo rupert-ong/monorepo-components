@@ -5,7 +5,7 @@
   "stream": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": ["*.md", "**/docs/*"],
       "registry": "https://registry.npmjs.org",
       "message": "chore(release): publish"
     }
