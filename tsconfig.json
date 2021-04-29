@@ -24,7 +24,7 @@
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
     // "composite": true
-  },
-  "include": ["./**/*.tsx", "./**/*.ts"],
-  "exclude": ["node_modules", "**/node_modules", "dist", "**/dist"]
+  }
+  // "include": ["./**/*.tsx", "./**/*.ts"],
+  // "exclude": ["./node_modules", "**/node_modules", "./dist", "**/dist"]
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface BarProps {
+  /** id for Bar */
   id?: string;
 }
 
