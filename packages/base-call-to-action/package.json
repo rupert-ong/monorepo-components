@@ -5,10 +5,10 @@
   "keywords": [],
   "author": "rupert-ong <rupert.ong@gmail.com>",
   "license": "ISC",
-  "main": "dist/base-call-to-action.cjs.js",
-  "module": "dist/base-call-to-action.esm.js",
-  "src": "lib/base-call-to-action.tsx",
-  "types": "dist/types/base-call-to-action/lib/base-call-to-action.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "src": "lib/index.tsx",
+  "types": "dist/types/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

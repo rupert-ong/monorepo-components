@@ -1,5 +1,5 @@
-import { Button } from "@rupertong/base-button";
-import { Text } from "@rupertong/base-text";
+import Button from "@rupertong/base-button";
+import Text from "@rupertong/base-text";
 import React, { ReactNode } from "react";
 import styles from "./styles.css";
 
@@ -18,4 +18,4 @@ const CallToAction = ({ text, buttonText, ...rest }: CallToActionProps) => {
   );
 };
 
-export { CallToAction };
+export default CallToAction;

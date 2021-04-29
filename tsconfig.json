@@ -18,12 +18,13 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
     "paths": {
-      "@rupertong/base-button": ["packages/base-button/lib/base-button.tsx"],
-      "@rupertong/base-text": ["packages/base-text/lib/base-text.tsx"]
+      "@rupertong/base-button": ["packages/base-button/lib"],
+      "@rupertong/base-text": ["packages/base-text/lib"]
     }
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
     // "composite": true
   },
-  "include": ["./**/*.tsx", "./**/*.ts"]
+  "include": ["./**/*.tsx", "./**/*.ts"],
+  "exclude": ["node_modules", "**/node_modules", "dist", "**/dist"]
 }

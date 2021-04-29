@@ -5,10 +5,10 @@
   "keywords": [],
   "author": "rupert-ong <rupert.ong@gmail.com>",
   "license": "ISC",
-  "main": "dist/base-button.cjs.js",
-  "module": "dist/base-button.esm.js",
-  "src": "lib/base-button.tsx",
-  "types": "dist/types/base-button/lib/base-button.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "src": "lib/",
+  "types": "dist/types/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
