@@ -13,6 +13,8 @@ const currentWorkingPath = process.cwd();
 const {
   src,
   name,
+  main,
+  module: moduleName,
   devDependencies = {},
   peerDependencies = {},
 } = require(path.join(currentWorkingPath, "package.json"));
@@ -47,21 +49,22 @@ const inputOptions = {
           "dist",
           "/**/*.stor+(y|ies).*",
           "/**/*.+(spec|test).*",
+          fileName !== "base-ui" ? "packages/base-ui/*" : "",
         ],
       },
     }),
     babel({
       extensions: [".js", ".ts", ".tsx", ".jsx"],
-      exclude: [/core-js/],
+      // exclude: [/core-js/],
       presets: [
         [
           "@babel/preset-env",
-          {
+          /* {
             corejs: 3,
             modules: false,
             targets: "> 0.25%, ie 11, not op_mini all",
             useBuiltIns: "usage",
-          },
+          }, */
         ],
         "@babel/preset-react",
       ],
@@ -75,12 +78,15 @@ const inputOptions = {
 
 const outputOptions = [
   {
-    file: `dist/${fileName}.cjs.js`,
+    // file: `dist/${fileName}.cjs.js`,
+    file: main,
     format: "cjs",
     sourcemap: true,
+    exports: "auto",
   },
   {
-    file: `dist/${fileName}.esm.js`,
+    // file: `dist/${fileName}.esm.js`,
+    file: moduleName,
     format: "esm",
     sourcemap: true,
   },
