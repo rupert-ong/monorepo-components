@@ -3,5 +3,5 @@
 const baseButton = require('..');
 
 describe('@rupertong/base-button', () => {
-    it('needs tests');
+  it('needs tests');
 });

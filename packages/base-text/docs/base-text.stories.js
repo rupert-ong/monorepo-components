@@ -1,7 +1,7 @@
-import React from "react";
-import Text from "../lib";
+import React from 'react';
+import Text from '../lib';
 
-export default { title: "Text" };
+export default { title: 'Text' };
 
 export const Body = () => <Text>Body Text</Text>;
 export const Hero = () => <Text variant="Hero">Hero Text</Text>;

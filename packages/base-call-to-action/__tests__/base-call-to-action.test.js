@@ -3,5 +3,5 @@
 const baseCallToAction = require('..');
 
 describe('@rupertong/base-call-to-action', () => {
-    it('needs tests');
+  it('needs tests');
 });

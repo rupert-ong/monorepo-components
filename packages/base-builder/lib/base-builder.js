@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-const rollup = require("rollup");
-const path = require("path");
-const peerDepsExternal = require("rollup-plugin-peer-deps-external");
-const commonjs = require("@rollup/plugin-commonjs");
-const resolve = require("@rollup/plugin-node-resolve").default;
-const babel = require("@rollup/plugin-babel").default;
-const postcss = require("rollup-plugin-postcss");
-const typescript = require("rollup-plugin-typescript2");
-const fs = require("fs-extra");
-const rename = require("rollup-plugin-rename-node-modules");
+const rollup = require('rollup');
+const path = require('path');
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
+const commonjs = require('@rollup/plugin-commonjs');
+const resolve = require('@rollup/plugin-node-resolve').default;
+const babel = require('@rollup/plugin-babel').default;
+const postcss = require('rollup-plugin-postcss');
+const typescript = require('rollup-plugin-typescript2');
+const fs = require('fs-extra');
+const rename = require('rollup-plugin-rename-node-modules');
 
 const currentWorkingPath = process.cwd();
 const {
@@ -16,7 +16,7 @@ const {
   main,
   devDependencies = {},
   peerDependencies = {},
-} = require(path.join(currentWorkingPath, "package.json"));
+} = require(path.join(currentWorkingPath, 'package.json'));
 
 const inputPath = path.join(currentWorkingPath, src);
 
@@ -25,17 +25,17 @@ const inputOptions = {
   external: [
     ...Object.keys(devDependencies),
     ...Object.keys(peerDependencies),
-    "tslib",
+    'tslib',
   ],
   plugins: [
     rename(),
     peerDepsExternal(),
     resolve({
-      extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".node"],
+      extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json', '.node'],
     }),
     commonjs(),
     typescript({
-      tsconfig: "../../tsconfig.json",
+      tsconfig: '../../tsconfig.json',
       useTsconfigDeclarationDir: true,
       clean: true,
       tsconfigOverride: {
@@ -43,23 +43,23 @@ const inputOptions = {
           baseUrl: currentWorkingPath,
           declaration: true,
           declarationMap: true,
-          declarationDir: path.join(currentWorkingPath, "dist", "types"),
+          declarationDir: path.join(currentWorkingPath, 'dist', 'types'),
         },
-        outDir: "./dist",
+        outDir: './dist',
         include: [path.join(currentWorkingPath)],
         exclude: [
-          "node_modules",
-          "/**/*.stor+(y|ies).*",
-          "/**/*.+(spec|test).*",
+          'node_modules',
+          '/**/*.stor+(y|ies).*',
+          '/**/*.+(spec|test).*',
         ],
       },
     }),
     babel({
-      extensions: [".js", ".ts", ".tsx", ".jsx"],
+      extensions: ['.js', '.ts', '.tsx', '.jsx'],
       // exclude: [/core-js/],
       presets: [
         [
-          "@babel/preset-env",
+          '@babel/preset-env',
           {
             modules: false,
           },
@@ -70,10 +70,10 @@ const inputOptions = {
             useBuiltIns: "usage",
           }, */
         ],
-        "@babel/preset-react",
+        '@babel/preset-react',
       ],
-      plugins: ["@babel/plugin-transform-runtime"],
-      babelHelpers: "runtime",
+      plugins: ['@babel/plugin-transform-runtime'],
+      babelHelpers: 'runtime',
     }),
     postcss({
       modules: true,
@@ -84,21 +84,21 @@ const inputOptions = {
 const outputOptions = [
   {
     file: main,
-    format: "cjs",
+    format: 'cjs',
     sourcemap: true,
-    exports: "auto",
+    exports: 'auto',
   },
   {
-    dir: "dist/esm",
-    format: "esm",
+    dir: 'dist/esm',
+    format: 'esm',
     preserveModules: true,
-    preserveModulesRoot: "./lib",
+    preserveModulesRoot: './lib',
     sourcemap: true,
   },
 ];
 
 async function build() {
-  await fs.remove(path.join(currentWorkingPath, "dist"));
+  await fs.remove(path.join(currentWorkingPath, 'dist'));
   const bundle = await rollup.rollup(inputOptions);
   outputOptions.forEach(async (options) => {
     await bundle.write(options);

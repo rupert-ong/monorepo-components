@@ -3,5 +3,5 @@
 const baseBuilder = require('..');
 
 describe('@rupertong/base-builder', () => {
-    it('needs tests');
+  it('needs tests');
 });

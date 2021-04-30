@@ -3,5 +3,5 @@
 const baseText = require('..');
 
 describe('@rupertong/base-text', () => {
-    it('needs tests');
+  it('needs tests');
 });

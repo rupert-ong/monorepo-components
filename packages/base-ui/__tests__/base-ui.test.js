@@ -3,5 +3,5 @@
 const baseUi = require('..');
 
 describe('@rupertong/base-ui', () => {
-    it('needs tests');
+  it('needs tests');
 });

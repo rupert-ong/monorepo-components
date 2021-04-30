@@ -3,5 +3,5 @@
 const baseUtils = require('..');
 
 describe('@rupertong/base-utils', () => {
-    it('needs tests');
+  it('needs tests');
 });
