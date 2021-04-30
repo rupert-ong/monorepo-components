@@ -13,16 +13,12 @@ const rename = require("rollup-plugin-rename-node-modules");
 const currentWorkingPath = process.cwd();
 const {
   src,
-  name,
   main,
-  module: moduleName,
   devDependencies = {},
   peerDependencies = {},
 } = require(path.join(currentWorkingPath, "package.json"));
 
 const inputPath = path.join(currentWorkingPath, src);
-
-const fileName = name.replace("@rupertong/", "");
 
 const inputOptions = {
   input: inputPath,
@@ -87,18 +83,11 @@ const inputOptions = {
 
 const outputOptions = [
   {
-    // file: `dist/${fileName}.cjs.js`,
     file: main,
     format: "cjs",
     sourcemap: true,
     exports: "auto",
   },
-  /*   {
-    // file: `dist/${fileName}.esm.js`,
-    file: moduleName,
-    format: "esm",
-    sourcemap: true,
-  }, */
   {
     dir: "dist/esm",
     format: "esm",
