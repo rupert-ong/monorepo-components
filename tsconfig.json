@@ -18,8 +18,7 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
     "paths": {
-      "@rupertong/base-button": ["packages/base-button/lib"],
-      "@rupertong/base-text": ["packages/base-text/lib"]
+      "@rupertong/*": ["packages/*/lib"]
     }
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
