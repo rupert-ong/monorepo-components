@@ -21,7 +21,6 @@ const Text = ({
   ...rest
 }: TextProps): ReactElement => {
   const textVariant = styles[variant];
-  console.log(textVariant);
   const classes = clsx(
     styles.Text,
     {

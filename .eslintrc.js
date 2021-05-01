@@ -37,5 +37,16 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
+    {
+      files: [
+        '**/__tests__/**/*.+(ts|tsx|js)',
+        '**/?(*.)+(spec|test).+(ts|tsx|js)',
+      ],
+      extends: [
+        'plugin:jest/recommended',
+        'plugin:jest/style',
+        'plugin:jest-dom/recommended',
+      ],
+    },
   ],
 };
