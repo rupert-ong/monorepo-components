@@ -3,7 +3,7 @@ import React from 'react';
 import CallToAction from '.';
 
 describe('@rupertong/base-call-to-action', () => {
-  it('needs tests', () => {
+  it('renders correctly', () => {
     render(<CallToAction buttonText="click" text="read" />);
     expect(screen.getByText(/read/i)).toBeInTheDocument();
     expect(screen.getByRole('button')).toHaveTextContent(/click/i);

@@ -31,7 +31,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.config.js', 'base-builder.js'],
+      files: ['*.config.js', 'base-builder.js', 'jest.utils.js'],
       rules: {
         'no-console': 'off',
         '@typescript-eslint/no-var-requires': 'off',

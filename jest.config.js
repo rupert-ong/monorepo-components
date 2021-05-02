@@ -1,11 +1,9 @@
+const baseConfig = require('./config/jest/jest.config.base');
+
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  moduleNameMapper: {
-    '\\.(css|less)$': 'identity-obj-proxy',
-    '@rupertong/(.+)': '<rootDir>/packages/$1/lib',
-  },
-  coveragePathIgnorePatterns: ['<rootDir>/dist/', '<rootDir>/node_modules/'],
+  ...baseConfig,
+  projects: ['<rootDir>/packages/*'],
+  testPathIgnorePatterns: ['<rootDir>/packages/base-builder'],
+  collectCoverageFrom: ['<rootDir>/packages/*/lib/**/*.{ts,tsx,js,jsx}'],
   coverageDirectory: '<rootDir>/coverage/',
 };
