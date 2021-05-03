@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna run build",
-    "test:init": "npm run build && npm run test",
     "test": "jest --coverage",
-    "test:init-watch": "npm run build && npm run test:watch",
+    "test:ci": "npm run build && npm run test",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -16,6 +15,7 @@
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
     "bootstrap": "lerna bootstrap --hoist",
     "publish": "lerna publish",
+    "publish:ci": "npm run publish -- --yes",
     "prepare": "husky install"
   },
   "keywords": [],
