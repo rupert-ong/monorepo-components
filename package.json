@@ -15,7 +15,8 @@
     "format": "prettier --write \"./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
     "bootstrap": "lerna bootstrap --hoist",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -44,19 +45,28 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
+    "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "react": "16.x",
     "react-dom": "16.x",
     "ts-jest": "^26.5.5",
     "typescript": "^4.2.4"
   },
-  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "packages/**/*.{js,jsx,ts,tsx,json}": [
+      "eslint --fix"
+    ],
+    "packages/**/*.{js,jsx,ts,tsx,json,css,md}": [
+      "prettier --write"
+    ]
   }
 }
