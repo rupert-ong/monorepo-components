@@ -26,7 +26,7 @@ const Button = ({
   );
   return (
     <button {...rest} className={classes}>
-      {children}
+      BTN: {children}
     </button>
   );
 };
