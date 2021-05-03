@@ -23,6 +23,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.16",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
     "@storybook/addon-links": "^6.2.8",
@@ -67,6 +69,11 @@
     ],
     "packages/**/*.{js,jsx,ts,tsx,json,css,md}": [
       "prettier --write"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
     ]
   }
 }
