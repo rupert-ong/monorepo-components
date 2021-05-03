@@ -9,6 +9,7 @@ const postcss = require('rollup-plugin-postcss');
 const typescript = require('rollup-plugin-typescript2');
 const fs = require('fs-extra');
 const rename = require('rollup-plugin-rename-node-modules');
+const svgr = require('@svgr/rollup').default;
 
 const currentWorkingPath = process.cwd();
 const {
@@ -34,6 +35,7 @@ const inputOptions = {
       extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json', '.node'],
     }),
     commonjs(),
+    svgr(),
     typescript({
       tsconfig: '../../tsconfig.json',
       useTsconfigDeclarationDir: true,
