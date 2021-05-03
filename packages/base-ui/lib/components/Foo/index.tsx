@@ -6,6 +6,10 @@ export interface FooProps {
   id?: string;
 }
 
-const Foo = ({ id }: FooProps): ReactElement => <div id={id}>Foo</div>;
+const Foo = ({ id, ...rest }: FooProps): ReactElement => (
+  <div id={id} {...rest}>
+    Foo
+  </div>
+);
 
 export default Foo;

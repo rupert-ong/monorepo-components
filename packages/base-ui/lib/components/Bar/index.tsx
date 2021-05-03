@@ -5,6 +5,10 @@ export interface BarProps {
   id?: string;
 }
 
-const Bar = ({ id }: BarProps): ReactElement => <div id={id}>Bar</div>;
+const Bar = ({ id, ...rest }: BarProps): ReactElement => (
+  <div id={id} {...rest}>
+    Bar
+  </div>
+);
 
 export default Bar;
