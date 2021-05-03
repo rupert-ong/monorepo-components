@@ -5,8 +5,12 @@
   "stream": true,
   "command": {
     "publish": {
+      "conventionalCommits": true,
       "ignoreChanges": ["*.md", "**/docs/*"],
-      "registry": "https://registry.npmjs.org",
+      "registry": "https://registry.npmjs.org"
+    },
+    "version": {
+      "conventionalCommits": true,
       "message": "chore(release): publish"
     }
   },
