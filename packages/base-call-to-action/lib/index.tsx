@@ -10,7 +10,10 @@ export interface CallToActionProps {
   buttonText: ReactNode;
 }
 
-const CallToAction = ({
+/**
+ * Primary UI component to display call to action banner
+ */
+export const CallToAction = ({
   text,
   buttonText,
   ...rest
