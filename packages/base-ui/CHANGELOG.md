@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.2.2...@rupertong/base-ui@1.3.0) (2021-05-05)
+
+### Bug Fixes
+
+- **base-ui:** fix typo in Baz component ([8c9cbd3](https://github.com/rupert-ong/monorepo-components/commit/8c9cbd3934569e3a0455fb0cc24191fb4ce21075))
+
+### Features
+
+- **base-ui:** add Baz component ([3b10a6e](https://github.com/rupert-ong/monorepo-components/commit/3b10a6ee3e90650ab5250f61f1738a47e7e9640d))
+
 ## [1.2.2](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.2.1...@rupertong/base-ui@1.2.2) (2021-05-05)
 
 **Note:** Version bump only for package @rupertong/base-ui
