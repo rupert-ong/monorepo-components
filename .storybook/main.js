@@ -1,22 +1,34 @@
 module.exports = {
   stories: [
-    "../packages/**/*.stories.mdx",
-    "../packages/**/*.stories.@(js|jsx|ts|tsx)",
+    '../packages/**/*.stories.mdx',
+    '../packages/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-storysource',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        sourceLoaderOptions: {
+          injectStoryParameters: false,
+        },
+      },
+    },
+  ],
   webpackFinal: async (config) => {
     // remove default css rule from storybook
     config.module.rules = config.module.rules.filter(
-      (f) => f.test.toString() !== "/\\.css$/"
+      (f) => f.test.toString() !== '/\\.css$/'
     );
 
     // push our custom easy one
     config.module.rules.push({
       test: /\.css$/,
       use: [
-        "style-loader",
+        'style-loader',
         {
-          loader: "css-loader",
+          loader: 'css-loader',
           options: {
             // Key config
             modules: true,
@@ -26,7 +38,7 @@ module.exports = {
     });
 
     // Set priority order for stor(ies) source files
-    config.resolve.mainFields = ["src", "module", "main"];
+    config.resolve.mainFields = ['src', 'module', 'main'];
 
     // Return the altered config
     return config;
