@@ -13,7 +13,10 @@ export interface TextProps {
   variant?: 'Body' | 'Hero' | 'Heading';
 }
 
-const Text = ({
+/**
+ * Primary UI component for text display
+ */
+export const Text = ({
   children,
   className,
   as = 'p',
