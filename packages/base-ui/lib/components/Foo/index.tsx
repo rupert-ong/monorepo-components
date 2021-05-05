@@ -6,7 +6,10 @@ export interface FooProps {
   id?: string;
 }
 
-const Foo = ({ id, ...rest }: FooProps): ReactElement => (
+/**
+ * Foo component from base-ui
+ */
+export const Foo = ({ id, ...rest }: FooProps): ReactElement => (
   <div id={id} {...rest}>
     Foo
   </div>

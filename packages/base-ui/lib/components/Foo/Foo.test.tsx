@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import Bar from '.';
+import { Foo } from '.';
 
-describe('<Bar />', () => {
+describe('<Foo />', () => {
   it('renders correctly', () => {
-    render(<Bar id="test" data-testid="test-id" />);
+    render(<Foo id="test" data-testid="test-id" />);
     expect(screen.getByTestId('test-id')).toHaveTextContent(/foo/i);
   });
 });

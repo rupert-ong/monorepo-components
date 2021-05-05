@@ -5,7 +5,10 @@ export interface BarProps {
   id?: string;
 }
 
-const Bar = ({ id, ...rest }: BarProps): ReactElement => (
+/**
+ * Bar component from base-ui
+ */
+export const Bar = ({ id, ...rest }: BarProps): ReactElement => (
   <div id={id} {...rest}>
     Bar
   </div>
