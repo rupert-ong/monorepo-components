@@ -11,7 +11,10 @@ export interface ButtonProps {
   variant?: 'primary' | 'secondary';
 }
 
-const Button = ({
+/**
+ * Primary UI component for user interaction
+ */
+export const Button = ({
   children,
   className = '',
   variant = 'primary',
