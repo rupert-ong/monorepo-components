@@ -6,7 +6,13 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["*.md", "**/docs/*"],
+      "ignoreChanges": [
+        "**/*.md",
+        "**/docs/*",
+        "**/*.stories.*",
+        "**/*.test.*",
+        "**/*.spec.*"
+      ],
       "registry": "https://registry.npmjs.org"
     },
     "version": {

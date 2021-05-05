@@ -31,6 +31,12 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['**/*.+(js|jsx)'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+      },
+    },
+    {
       files: ['*.config.js', 'base-builder.js', 'jest.utils.js'],
       rules: {
         'no-console': 'off',
