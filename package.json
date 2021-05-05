@@ -4,9 +4,10 @@
   "description": "Monorepo for base library. Used for testing and experimentation.",
   "main": "index.js",
   "scripts": {
+    "init": "npm run bootstrap && npm run build",
     "build": "lerna run build",
     "test": "jest --coverage",
-    "test:ci": "npm run build && npm run test",
+    "test:ci": "npm run build && npm run test -- --maxWorkers=4",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
