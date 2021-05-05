@@ -4,6 +4,9 @@ module.exports = {
   ...baseConfig,
   projects: ['<rootDir>/packages/*'],
   testPathIgnorePatterns: ['<rootDir>/packages/base-builder'],
-  collectCoverageFrom: ['<rootDir>/packages/*/lib/**/*.{ts,tsx,js,jsx}'],
+  collectCoverageFrom: [
+    '<rootDir>/packages/*/lib/**/*.{ts,tsx,js,jsx}',
+    '!**/*.stor(y|ies).*',
+  ],
   coverageDirectory: '<rootDir>/coverage/',
 };
