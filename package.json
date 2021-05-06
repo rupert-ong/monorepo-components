@@ -7,7 +7,7 @@
     "init": "npm run bootstrap && npm run build",
     "build": "lerna run build",
     "test": "jest --coverage",
-    "test:ci": "npm run build && npm run test -- --maxWorkers=4",
+    "test:ci": "npm run test -- --maxWorkers=4",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -15,6 +15,7 @@
     "format": "prettier --write \"./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
     "bootstrap": "lerna bootstrap --hoist",
+    "prepublish": "npm run init",
     "publish": "lerna publish",
     "publish:ci": "npm run publish -- --yes",
     "prepare": "husky install"
