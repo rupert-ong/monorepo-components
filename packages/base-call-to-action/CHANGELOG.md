@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-call-to-action@1.2.3...@rupertong/base-call-to-action@1.2.4) (2021-05-06)
+
+**Note:** Version bump only for package @rupertong/base-call-to-action
+
 ## [1.2.3](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-call-to-action@1.2.2...@rupertong/base-call-to-action@1.2.3) (2021-05-06)
 
 **Note:** Version bump only for package @rupertong/base-call-to-action

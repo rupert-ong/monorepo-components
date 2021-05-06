@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.3...@rupertong/base-button@1.2.4) (2021-05-06)
+
+### Bug Fixes
+
+- **base-button:** fix color again sorry ([a7e3bfc](https://github.com/rupert-ong/monorepo-components/commit/a7e3bfc1d024bcea917c12748d8d206330830475))
+
 ## [1.2.3](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.2...@rupertong/base-button@1.2.3) (2021-05-06)
 
 ### Bug Fixes
