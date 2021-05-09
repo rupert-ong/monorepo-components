@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-theta.1](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-demo-prerelease@0.1.0-beta.0...@rupertong/base-demo-prerelease@0.1.0-theta.1) (2021-05-09)
+
+### Features
+
+- add theta pre-release test ([86afb19](https://github.com/rupert-ong/monorepo-components/commit/86afb19363722d7891ddba9d870ad1f0b73b2da0))
+
 # [0.1.0-theta.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-demo-prerelease@0.1.0-beta.0...@rupertong/base-demo-prerelease@0.1.0-theta.0) (2021-05-09)
 
 ### Features
