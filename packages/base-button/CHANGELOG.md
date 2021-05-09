@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.4...@rupertong/base-button@1.2.5) (2021-05-09)
+
+### Bug Fixes
+
+- **base-button:** remove BTN label ([ea006ee](https://github.com/rupert-ong/monorepo-components/commit/ea006eed267484aa716def7692caa5d0d043cc88))
+
 ## [1.2.4](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.3...@rupertong/base-button@1.2.4) (2021-05-06)
 
 ### Bug Fixes
