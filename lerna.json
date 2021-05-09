@@ -14,12 +14,12 @@
         "**/*.test.*",
         "**/*.spec.*"
       ],
-      "message": "chore(release): publish",
+      "message": "chore(release): publish %s",
       "registry": "https://registry.npmjs.org"
     },
     "version": {
       "conventionalCommits": true,
-      "push": false
+      "message": "chore(version): bump to %s"
     }
   },
   "bootstrap": {
