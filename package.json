@@ -1,6 +1,7 @@
 {
   "name": "base",
   "version": "1.0.0",
+  "private": true,
   "description": "Monorepo for base library. Used for testing and experimentation.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +18,7 @@
     "bootstrap": "lerna bootstrap --hoist",
     "prepublish": "npm run init",
     "publish": "lerna publish",
-    "postpublish": "lerna publish from-package --yes",
+    "postpublish": "lerna publish from-package --yes || exit 0",
     "publish:ci": "npm run publish -- --yes",
     "prepare": "husky install"
   },
