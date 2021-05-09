@@ -17,7 +17,7 @@
     "bootstrap": "lerna bootstrap --hoist",
     "prepublish": "npm run init",
     "publish": "lerna publish",
-    "postpublish": "lerna publish from-package",
+    "postpublish": "lerna publish from-package --yes",
     "publish:ci": "npm run publish -- --yes",
     "prepare": "husky install"
   },
