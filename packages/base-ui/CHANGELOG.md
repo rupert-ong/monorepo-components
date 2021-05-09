@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.3.1...@rupertong/base-ui@1.3.2) (2021-05-09)
+
+### Bug Fixes
+
+- remove test label from Baz ([7797278](https://github.com/rupert-ong/monorepo-components/commit/7797278072b7d4d6f7c5f26658ddb117217cdc0d))
+
 ## [1.3.1](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.3.0...@rupertong/base-ui@1.3.1) (2021-05-09)
 
 ### Bug Fixes
