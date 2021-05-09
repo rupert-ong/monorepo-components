@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0-alpha.1](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-demo-prerelease@0.2.0-alpha.0...@rupertong/base-demo-prerelease@0.2.0-alpha.1) (2021-05-09)
+
+### Bug Fixes
+
+- add pre-release fix ([b5427ed](https://github.com/rupert-ong/monorepo-components/commit/b5427ed4c778c652572149db80233ce6b7e7b5de))
+
 # [0.2.0-alpha.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-demo-prerelease@0.1.0...@rupertong/base-demo-prerelease@0.2.0-alpha.0) (2021-05-09)
 
 ### Features
