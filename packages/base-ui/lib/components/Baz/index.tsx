@@ -11,7 +11,7 @@ export interface BazProps {
  */
 export const Baz = ({ id, ...rest }: BazProps): ReactElement => (
   <div id={id} {...rest}>
-    Baz (test)
+    Baz
   </div>
 );
 
