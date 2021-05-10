@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.1.2](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-utils@1.1.1...@rupertong/base-utils@1.1.2) (2021-05-05)
+## [1.1.2](https://github.com/rupert-ong/monorepo-components/compare//base-utils@1.1.1...@rupertong/base-utils@1.1.2) (2021-05-05)
 
 **Note:** Version bump only for package @rupertong/base-utils
 

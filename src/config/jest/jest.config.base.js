@@ -1,3 +1,5 @@
+const { PACKAGE_SCOPE } = require('../constants');
+
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
@@ -7,6 +9,6 @@ module.exports = {
     '\\.(css|less)$': 'identity-obj-proxy',
     '\\.(jpg|jpeg|png|gif|svg)$':
       '<rootDir>/src/config/jest/__mocks__/fileMock.ts',
-    '@rupertong/(.+)': '<rootDir>/packages/$1/lib',
+    [new RegExp(`${PACKAGE_SCOPE}(.+)`)]: '<rootDir>/packages/$1/lib',
   },
 };
