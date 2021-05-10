@@ -1,14 +1,6 @@
 import { Meta } from '@storybook/addon-docs/blocks';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
 
-<Meta title="Intro" />
+<Meta title="base-ui/Intro" />
 
 <style>{`
   .subheading {
@@ -114,49 +106,20 @@ import StackAlt from './assets/stackalt.svg';
   
 `}</style>
 
-# Getting started with Base
+# Getting started with Base UI
 
-Base is a sample component library used to test a **monorepo architecture**.
+Base is a component library containing "atomic" components intended for direct use by your application.
+If you are developing domain level components in this monorepo, it is recommended that you import the components
+you need from their immediate package, and not this one.
 
-Browse example stories now by navigating to them in the sidebar.
-View their code in the `packages/*/lib` directory to learn how they work.
+To install the package, open your terminal and run:
 
-<div className="subheading">Atomic components</div>
+```bash
+npm i @rupertong/base-ui
+```
 
-<div className="link-list">
-  <a className="link-item" href="/story/base-ui-intro--page">
-    <img src={Plugin} alt="plugin" />
-    <span>
-      <strong>Base UI</strong>
-      Component library containing Foo, Bar and Baz
-    </span>
-  </a>
-  <a className="link-item" href="/story/button--default">
-    <img src={StackAlt} alt="Build" />
-    <span>
-      <strong>Base Button</strong>A simple button
-    </span>
-  </a>
-  <a className="link-item" href="/story/text--body">
-    <img src={Colors} alt="colors" />
-    <span>
-      <strong>Base Text</strong>A typography element to render text
-    </span>
-  </a>
-</div>
+All components and their types are exposed via a barrel export in the root directory:
 
-<div className="subheading">Domain components</div>
-
-<div className="link-list" style={{ gridTemplateRows: '1fr' }}>
-  <a className="link-item" href="/story/calltoaction--default">
-    <img src={Comments} alt="comments" />
-    <span>
-      <strong>Call to action</strong>A complex component containing Button and
-      Text
-    </span>
-  </a>
-</div>
-
-<div className="tip-wrapper">
-  <span className="tip">Did you know?</span>You can buy Rupert a beer
-</div>
+```jsx
+import { Button, ButtonProps } from '@rupertong/base-ui';
+```
