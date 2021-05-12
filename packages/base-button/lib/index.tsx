@@ -29,7 +29,7 @@ export const Button = ({
   );
   return (
     <button {...rest} className={classes}>
-      BTN: {children}
+      BTN2: {children}
     </button>
   );
 };
