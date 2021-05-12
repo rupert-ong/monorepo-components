@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.5...@rupertong/base-button@1.3.0) (2021-05-12)
+
+### Features
+
+- **button:** add text ([d67aad4](https://github.com/rupert-ong/monorepo-components/commit/d67aad4098fb87b92d96da05a715d2f3869147cb))
+- add text to button ([3aa0ed9](https://github.com/rupert-ong/monorepo-components/commit/3aa0ed9eae6efee1a21a7d5fd70c60848bc00b2e))
+
 ## [1.2.5](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.4...@rupertong/base-button@1.2.5) (2021-05-09)
 
 ### Bug Fixes
