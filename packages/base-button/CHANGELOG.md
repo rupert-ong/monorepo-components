@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.3.0...@rupertong/base-button@2.0.0) (2021-05-18)
+
+### Features
+
+- **base-button:** change breaking color ([207dbc2](https://github.com/rupert-ong/monorepo-components/commit/207dbc2e65c038f10fa5fc44839eb70722ce4bd0))
+
+### BREAKING CHANGES
+
+- **base-button:** color change to test dependency updates
+
 # [1.3.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-button@1.2.5...@rupertong/base-button@1.3.0) (2021-05-12)
 
 ### Features
