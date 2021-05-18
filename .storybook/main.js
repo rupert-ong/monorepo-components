@@ -10,6 +10,7 @@ module.exports = {
   ],
   webpackFinal: async (config) => {
     // remove default css rule from storybook
+    // add fake comment
     config.module.rules = config.module.rules.filter(
       (f) => f.test.toString() !== '/\\.css$/'
     );
