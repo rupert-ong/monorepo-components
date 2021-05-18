@@ -11,7 +11,7 @@ export interface FooProps {
  */
 export const Foo = ({ id, ...rest }: FooProps): ReactElement => (
   <div id={id} {...rest}>
-    Foo ey
+    Foo
   </div>
 );
 
