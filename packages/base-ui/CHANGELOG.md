@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.3.2...@rupertong/base-ui@1.4.0) (2021-05-18)
+
+### Features
+
+- **base-ui:** added feature to Foo ([5cdf89e](https://github.com/rupert-ong/monorepo-components/commit/5cdf89e372e318060eb05c3f272fd6671928bfa4))
+
 ## [1.3.2](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.3.1...@rupertong/base-ui@1.3.2) (2021-05-09)
 
 ### Bug Fixes
