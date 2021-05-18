@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.4.0...@rupertong/base-ui@1.4.1) (2021-05-18)
+
+### Bug Fixes
+
+- **base-ui:** remove ey from Foo ([dca3673](https://github.com/rupert-ong/monorepo-components/commit/dca3673ba72e190fdc0391a61d91e280f0df6b8c))
+
 # [1.4.0](https://github.com/rupert-ong/monorepo-components/compare/@rupertong/base-ui@1.3.2...@rupertong/base-ui@1.4.0) (2021-05-18)
 
 ### Features
