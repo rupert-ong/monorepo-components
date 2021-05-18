@@ -16,7 +16,7 @@
     "format": "prettier --write \"./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
     "bootstrap": "lerna bootstrap --hoist",
-    "prepublish": "npm run postinstall && lerna version",
+    "prepublishOnly": "npm run postinstall && lerna version",
     "publish": "lerna publish from-git",
     "postpublish": "lerna publish from-package",
     "prepublish:ci": "npm run postinstall && lerna version --yes",
